@@ -1,0 +1,5 @@
+from itertools import groupby
+S = input()
+for k, g in groupby(S):
+    count = len(list(g))
+    print(f"({count}, {k})", end=" ")
